@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .teste{
+            
+            display: flex;
+            justify-content: center; /* Alinhar horizontalmente oconteúdo dentro da div .action-button  */
+            align-items: center; /* Alinhar verticalmente oconteúdo dentro da div .action-button  */
+            height: 100vh;
+        }
+        .carouselSize{
+            width: 600px;
+            height: 800px;
+            object-fit: cover;
+        }
+
+    </style>
+
+    <title>Slide Show W/ Bootstrap</title>
+</head>
+<body>
+    <main class="teste">
+    <div id="carouselSite" class="carousel slide carouselSize" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="carouselSize" src="https://viagemeturismo.abril.com.br/wp-content/uploads/2017/05/istock-533960357-1.jpg" class="d-block w-100"> 
+            </div>
+            <div class="carousel-item ">
+                <img class="carouselSize" src="https://www.lookatporto.pt/wp-content/uploads/2020/06/lookatporto.jpg" class="d-block w-100"> 
+            </div>
+            <div class="carousel-item ">
+                <img class="carouselSize" src="https://www.portugal-live.net/images/rotator/321-porto-a.jpg" class="d-block w-100"> 
+            </div>
+        </div>
+        <a class="carousel-control-prev" data-bs-target="#carouselSite" type="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" data-bs-target="#carouselSite" type="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Proxímo</span>
+        </a>
+    </div>
+
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
